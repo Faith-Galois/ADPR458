@@ -49,6 +49,27 @@ nav ul li a {
     border-radius: 12px;
     min-width: 120px;
     text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+a:hover {
+    background-color: #085477;
+}
+
+.button {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    background-color: #57b1dc;
+    border-radius: 12px;
+    min-width: 120px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #085477;
 }
 
 .col-span-4 img {
@@ -78,6 +99,27 @@ h2{
     color: #ec9e30;
 }
 
+img {
+    max-width: 100%;
+}
+
+.card {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+   box-shadow: 0 .125rem .5rem rgba(0,0,0,.15);
+}
+
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+
+.card-text {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem;
+}
+
 /**** Layout ****/
 
 .container {
@@ -102,12 +144,22 @@ h2{
     .col-span-4 {
         grid-column: span 4;
     }
+
+    .work-section {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        flex-basis: 27.5%;
+    }
 }
     </style>
     
     <!-- HEADER SECTION -->
 
-    <div class="container">
+ 
     <head>
     <header>
         <h1>Interactive Media Design</h1>
@@ -132,25 +184,31 @@ h2{
    
    <!-- Information Section-->
       
-    <section class="col-span-4">
-        <img src="ProfilePic.png" alt="Picture of Faith Galois"
-        width="150px" height="150px";>
-        <h3>Project 1</h3>
-        <p>Description goes here.</p>
+    <section>
+    <h1>Work</h1>
     </section>
+   
+   <section class="work-section">
+    <div class="card">
+        <img src="Artboard 1.jpg" alt="strategic planning" width="150px" height="150px";>
+        <h3 class="card-title">Strategic Planning</h3>
+        <p class="card-text">Description goes here about planning and brainstorming ideas for a strategic cammunicaations plan. </p>
+        <a href="#" class="button">Learn More</a>
+   </div>
 
-    <section class="col-span-4">
-        <img src="ProfilePic.png" alt="Picture of Faith Galois"
-        width="150px" height="150px";>
-        <h3>Project 2</h3>
-        <p>Description goes here.</p>
-    </section>
+   <div class="card">
+    <img src="Artboard 2.jpg" alt="poster design" width="150px" height="150px";>
+    <h3 class="card-title">Poster Design</h3>
+    <p class="card-text">Description goes here about cool poster designs. </p>
+    <a href="#" class="button">Learn More</a>
+</div>
 
-    <section class="col-span-4">
-        <img src="ProfilePic.png" alt="Picture of Faith Galois"
-        width="150px" height="150px";>
-        <h3>Project 3</h3>
-        <p>Description goes here.</p>
+<div class="card">
+    <img src="Artboard 3.jpg" alt="wire framing" width="150px" height="150px";>
+    <h3 class="card-title">Wire Framing</h3>
+    <p class="card-text">Description goes here about interactive projects that use wireframing techniques. </p>
+    <a href="#" class="button">Learn More</a>
+</div>
     </section>
 
     <!-- Footer -->
