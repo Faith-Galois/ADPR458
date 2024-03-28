@@ -26,37 +26,10 @@ header {
     margin-top: 10px;
 }
 
-nav {
-    background-color:  #f5c98c;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: sans-serif;
-}
-
-nav ul {
-display: flex;
-list-style: none;
-justify-content: center;
-gap: 30px;
-}
-
-nav ul li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 16px;
-    background-color: #57b1dc;
-    border-radius: 12px;
-    min-width: 120px;
-    text-align: center;
-}
-
 aside img {
     border: 4px solid  #57b1dc;
     border-radius: 100%;
 }
-
-
 
 h1 {
 text-align: center;
@@ -66,7 +39,7 @@ text-transform: uppercase;
 border-bottom: 1px solid #57b1dc;
 margin-top: 30px;
 font-family: sans-serif;
-color: #000507;
+color: #05374e;
 }
 
 div {
@@ -103,11 +76,60 @@ h2{
         grid-column: span 4;
     }
 }
+
+/* Components */
+
+.button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    background-color: #57b1dc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 .125rem .5rem rgba(0,0,0,.15);
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #085477;
+}
+
+/* Navigation Using Flexbox */
+
+nav {
+    background-color:  #f5c98c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+justify-content: center;
+gap: 30px;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    background-color: #57b1dc;
+    border-radius: 12px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 .125rem .5rem rgba(0,0,0,.15);
+    transition: background-color 0.5s ease;
+}
+
+a:hover {
+    background-color: #085477;
+}
     
-
-
-
-    </style>
+ </style>
     
     <!-- HEADER SECTION -->
 
@@ -123,14 +145,9 @@ h2{
     <!-- NAV SECTION -->
     <nav>
         <ul>
-            <li>
-                <a href="index.html">About</a>
-            </li>
-            <li>
-                <a href="work.html">Work</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
+            <li><a href="index.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a>
         </ul>
     </nav>
    
@@ -156,8 +173,9 @@ h2{
     </section>
 
     <aside class="col-span-4">
-        <img src="ProfilePic.png" alt="Picture of Faith Galois"
-        width="150px" height="150px";>
+        <p><img src="ProfilePic.png" alt="Picture of Faith Galois"
+        width="150px" height="150px";></p>
+        <a href="https://www.linkedin.com/in/faith-galois-217113268/" target="_blank" class="button">Connect on LinkedIn</a>
     </aside>
 
     <!-- Footer -->
