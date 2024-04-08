@@ -3,187 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments - Faith Galois</title>
-    
-    <style>
-
-    * {
-        box-sizing: border-box;
-    }
-       
-       body {
-    margin: 0;
-    font-family: sans-serif;
-    background-image: url("Pattern_Background.png");
-}
-
-header {
-    font-family: sans-serif;
-    background-color: #57b1dc;
-    color: #fff;
-    padding: 35px 25px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-aside img {
-    border: 4px solid  #57b1dc;
-    border-radius: 100%;
-}
-
-h1 {
-text-align: center;
-font-family: serif;
-font-weight: normal;
-text-transform: uppercase;
-border-bottom: 1px solid #57b1dc;
-margin-top: 30px;
-font-family: sans-serif;
-color: #05374e;
-}
-
-div {
-    margin-top: 30px;
-  margin-left: 300px;
-}
-
-h2{
-    color: #ec9e30;
-}
-
-/**** Layout ****/
-
-.container {
-    background-color: white;
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(12,1fr);
-    margin: 0 auto;
-    width: min(95%, 75rem);
-}
-
-.container > * {
-    grid-column: span 12;
-}
-
-/* Desktop Layout */
-
-@media screen and (min-width: 40rem) {
-  .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-4 {
-        grid-column: span 4;
-    }
-}
-
-/* Components */
-
-.button {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 16px;
-    background-color: #57b1dc;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 .125rem .5rem rgba(0,0,0,.15);
-    margin: 0 .25rem .25rem 0;
-    transition: background-color 0.5s ease;
-}
-
-.button:hover {
-    background-color: #085477;
-}
-
-/* Navigation Using Flexbox */
-
-nav {
-    background-color:  #f5c98c;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: sans-serif;
-}
-
-nav ul {
-display: flex;
-list-style: none;
-justify-content: center;
-gap: 30px;
-}
-
-nav ul li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 16px;
-    background-color: #57b1dc;
-    border-radius: 12px;
-    min-width: 120px;
-    text-align: center;
-    box-shadow: 0 .125rem .5rem rgba(0,0,0,.15);
-    transition: background-color 0.5s ease;
-}
-
-a:hover {
-    background-color: #085477;
-}
-    
- </style>
-    
-    <!-- HEADER SECTION -->
-
-    <div class="container">
-    <head>
-    <header>
-        <h1>Interactive Media Design</h1>
-    </header>
+    <title>Faith Galois</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qpw0pvp.css">
 </head>
 
+<style>
+* {
+    margin: 0 auto;
+    background-color: #F2B53B;
+}
+
+.container1 {
+    display: flex;
+}
+
+.title {
+    font-family: "articulat-cf", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: xx-large;
+text-align: left;
+width: 600px;
+padding-top: 200px;
+padding-left: 80px;
+}
+
+.profile {
+    width: 500px;
+   border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.butterfly {
+    width: 500px;
+    padding-top: 500px;
+    padding-right: 30px;
+}
+
+.about {
+    font-family: "articulat-cf", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: x-large;
+padding-left: 80px;
+padding-top: 80px;
+padding-bottom: 30px;
+}
+
+.mywork {
+    font-family: "articulat-cf", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: x-large;
+text-align: center;
+padding-top: 80px;
+padding-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+/*** Footer ***/
+
+.instagram {
+    width: 200px;
+}
+
+.linkedin {
+    width: 200px;
+}
+
+.behance {
+    width: 200px;
+}
+
+/*** Navigation ***/
+
+nav {
+display: flex;
+justify-content: left;
+}
+nav ul {
+    margin: 0;
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+.nav1 {
+    width: 200px;
+}
+
+.nav2 {
+    width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+.photos{
+    flex: 50%;
+    max-width: 50%;
+}
+.profile {
+    min-width: 75%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .photos{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .profile {
+        min-width: 60%;
+    }
+    }
+</style>
 
 <body>
-    <!-- NAV SECTION -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a>
-        </ul>
-    </nav>
-   
-   <!-- Information Section-->
-  
-   <section class="col-span-8">
-    <h1>Faith Galois</h1>
+  <div class="gd-container">
+    <div class="container1">
+    <div class="title">
+        <h1>faith galois's portfolio</h1></div>
+        <div class="butterfly"><img src="butterfly.png" alt=""></div>
+        <div><img class="profile" src="Profile Photo.jpg" alt=""></div>
+       </div>
+
+        <Nav> 
+            <ul>
+                <li class="nav1">
+                    <a href="index.html">
+                        <img src="aboutme_button.png"></a>
+                 </li>
+                 <li class="nav2">
+                    <a href="work.html">
+                        <img src="mywork_button.png"></a>
+                 </li>
+            </ul>
+        </Nav>
     
-    <h2>About Me</h2>
-    <p>I am a 21 year old from Lincoln, NE. I am majoring in Advertising 
-    and Public Relations and Graphic Design at the University of Nebraska-Lincoln.</p>
+
+    <div class="container2">
+        <div class="about"> 
+            <h1>about me</h1>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="aboutme"> <img src="aboutme.png" alt=""></div>
+    </div>
+</div>
+
+<footer>
+    <ul class="links">
+        <li class="instagram">
+            <a href="https://www.instagram.com/faith.galois/" target="_blank">
+                <img src="Instagram_button.png" alt="">
+            </a>
+         </li>
+         <li class="linkedin">
+            <a href="https://www.linkedin.com/in/faith-galois-217113268/" target="_blank">
+                <img src="Linkedin_button copy.png" alt="">
+            </a>
+         </li>
+         <li class="behance">
+            <a href="https://www.behance.net/faithgalois" target="_blank">
+                <img src="Behance_button.png" alt="">
+            </a>
+         </li>
+
+    </ul>
     
-    <h2>Classes This Semester</h2>
-    <p>Life Drawing, Second Year Spanish 1, Interactive Media Design, Statistical Methods, and Graphic Design 3.</p>
-    
-    <h2>Outside of Class</h2>
-    <p>Outside of classes I have a lot of hobbies. I enjoy learning new skills and expirimenting with new art mediums.</p>
-   
-    <h2>After Graduation</h2>
-    <p>After graduation I want to work in an advertising agency as a part of their graphic design team. 
-    I want to be able to work with companies to help rebrand, do package design, web design, and more. 
-    </p>
-    </section>
+</footer>
+</div>
+ 
 
-    <aside class="col-span-4">
-        <p><img src="ProfilePic.png" alt="Picture of Faith Galois"
-        width="150px" height="150px";></p>
-        <a href="https://www.linkedin.com/in/faith-galois-217113268/" target="_blank" class="button">Connect on LinkedIn</a>
-    </aside>
-
-    <!-- Footer -->
-
-    <footer>
-        <p>© 2024 Faith Galois</p>
-    </footer>
-
-</div><!--Container Closes-->
 </body>
 </html>
