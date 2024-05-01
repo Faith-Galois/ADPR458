@@ -1,0 +1,47 @@
+header {
+    color: white;
+    background-color: rgba(115, 158, 122, 1);
+}
+
+.logo {
+    color: white;
+    font-family: "gautreaux", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav {
+    font-family: "merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+ nav li {
+    margin: 0 0.5rem;
+    padding-bottom: 20px;
+  }
+
+  nav a:link, nav a:visited {
+    color: rgb(61, 83, 65);
+  }
+
+  .profile {
+    width: 1029px;
+    height: 1478px;
+    margin: 0;
+  }
+
+  .TransparentBack {
+    background-color: rgba(107, 138, 145, 0.66);
+  }
