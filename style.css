@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #B8CBBB;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -18,6 +22,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    text-decoration: none;
 }
 
 nav {
@@ -48,8 +53,7 @@ nav ul {
   }
 
   .profile {
-    width: 1029px;
-    height: 1478px;
+   width: 600px;
     margin: 0;
   }
 
@@ -70,9 +74,62 @@ nav ul {
     background-color: #558B97;
     color: #fff;
     padding: 40px;
-    transform: translateX(-80px);
+    transform: translateX(-210px);
     border: 40px solid rgba(0, 0, 0, 0.25);
     border-right-width: 60px;
     border-top-width: 50px;
   }
 
+  div.scroll-container {
+    background-color: #2f4b51;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+  #MasterCopy {
+    width: 410px;
+  }
+
+  #AbstractLandscape {
+    width: 387px;
+  }
+
+  #AbstractPortrait1{
+    width: 387px;
+  }
+
+  #CafeCards {
+    width: 565px;
+  }
+
+  .mywork {
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background-color: #2f4b51;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  button {
+    border: none;
+    background-color: #558B97;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .SeeMore {
+    padding-top: 20px;
+    justify-content: right;
+  }
