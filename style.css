@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -132,4 +133,40 @@ nav ul {
   .SeeMore {
     padding-top: 20px;
     justify-content: right;
+  }
+
+  .form-signup {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: rgba(115, 158, 122, 1);
+    border-radius: 8px;
+    font-family: "merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    padding: 20px;
+  }
+
+  .form-signup h2 {
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+  }
+
+  .form-signup p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .form-container {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
+  .form-control {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
   }

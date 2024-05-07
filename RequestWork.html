@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Faith Galois</h1>
+        <a href="index.html"><h1 class="logo">Faith Galois</h1></a>
         <nav>
             <ul>
                 <li><a href="index.html">- Home</a></li>
@@ -21,5 +21,34 @@
             </ul>
         </nav>
     </header>
+
+    <div class="form-container">
+        <form action="post" data-netlify="true" class="form-signup">
+            <h2>Request Work</h2>
+            <p>Leave any requests for my work here and be sure to be as detailed as possible!</p>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="first_name" placeholder="First Name"> 
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="last_name" placeholder="Last Name"> 
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="work_type" placeholder="Work Type/Medium">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="detailed_description" placeholder="Detailed Description">
+            </div>
+            <input type="submit" class="submit_button" name="" value="submit">
+        </form>
+
+    </div>
+    
 </body>
 </html>
