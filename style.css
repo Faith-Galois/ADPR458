@@ -138,7 +138,7 @@ nav ul {
   .form-signup {
     margin: 0 auto;
     max-width: 400px;
-    background-color: rgba(115, 158, 122, 1);
+    background-color: #2f4b51;
     border-radius: 8px;
     font-family: "merriweather", serif;
     font-weight: 300;
@@ -161,7 +161,7 @@ nav ul {
   }
 
   .form-container {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 300px;
   }
 
@@ -170,3 +170,53 @@ nav ul {
     margin: 5px;
     border-radius: 5px;
   }
+
+  .submit_button {
+    border: none;
+    background-color: #558B97;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .submit-container {
+    padding-top: 10px;
+  }
+
+  .blog_image {
+    width: 500px;
+    padding-top: 80px;
+    padding-left: 40px;
+  }
+
+  .image_outline {
+    background-color: #558B97;
+    width: 550px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .blog-container {
+    padding-top: 70px;
+    display: flex;
+  }
+
+  .blog-title {
+    display: flex;
+  }
+
+  .blog-info {
+    display: flex;
+  }
+
+  .blog-post {
+    display: flex;
+  }
+
+
+
